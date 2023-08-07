@@ -1,0 +1,33 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(DemoApp());
+}
+
+class DemoApp extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    return DemoAppState();
+  }
+}
+
+class DemoAppState extends State<DemoApp> {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Yuri'),
+        ),
+        body: Center(
+          child: CircleAvatar(
+            backgroundImage:NetworkImage('data:image/jpeg;base64,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'),
+            radius: 100,
+            //backgroundColor: Colors.blue ,
+            child: Text('Yuri',style: TextStyle(color: Colors.deepPurple,fontWeight: FontWeight.bold),),
+          ),
+        ),
+      ),
+    );
+  }
+}
